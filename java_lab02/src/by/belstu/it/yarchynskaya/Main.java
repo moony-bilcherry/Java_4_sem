@@ -6,8 +6,6 @@ package by.belstu.it.yarchynskaya;
  * */
 public class Main {
     /**
-     * @return ничего потому что войд
-     * @trows
      * @param args - аргументы
      * */
     public static void main(String[] args) {
