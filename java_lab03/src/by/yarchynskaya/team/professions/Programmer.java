@@ -35,6 +35,6 @@ public class Programmer extends Worker {
     public String toString() {
         return "\n\t* ПРОГРАММИСТ " + surname + ' ' + name +
                 ":\n\t\tУровень: " + level +
-                "\n\t\tВозраст: " + age + ", З/П: " + salary + ", стаж: " + exprerience;
+                "\n\t\tВозраст: " + age + ", З/П: " + salary + ", стаж: " + experience;
     }
 }

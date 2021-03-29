@@ -7,6 +7,9 @@ import by.yarchynskaya.team.professions.Engineer;
 import by.yarchynskaya.team.professions.Programmer;
 import by.yarchynskaya.team.professions.ProgrammerType;
 import by.yarchynskaya.team.professions.SystemAdmin;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 
 /*Определить иерархию сотрудников: инженер, сис админ,
 программисты (junior, senior и т.п.). Набрать компанию по заданному плану
@@ -14,8 +17,14 @@ import by.yarchynskaya.team.professions.SystemAdmin;
 отсортировтаь по зарплате, найти сотрудников с заданным уровнем навыков*/
 
 public class Main {
+    static{
+        new DOMConfigurator().doConfigure("log/log4j.xml", LogManager.getLoggerRepository());
+    }
+    private static final Logger LOG = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
+        LOG.info("Starting program_____________________________");
+
         Company SurveyCorps = new Company("SurveyCorps");
         System.out.println(SurveyCorps.toString());
 

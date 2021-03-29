@@ -2,11 +2,13 @@ package by.yarchynskaya.director;
 
 import by.yarchynskaya.company.Company;
 import by.yarchynskaya.team.Worker;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Director implements IDirector {
+    private static final Logger LOG = Logger.getLogger(Director.class);
     public String name;
 
     public Director(String name) {
@@ -37,6 +39,7 @@ public class Director implements IDirector {
                 }
             });
         }
+        LOG.info("\n====== Sorted by salary");
     }
 
     @Override
@@ -46,7 +49,7 @@ public class Director implements IDirector {
             throw new NullPointerException("Null pointer");
         ArrayList<Worker> arr = com.getStaff();
         for (Worker worker: arr) {
-            if(worker.getExprerience() == exp)
+            if(worker.getExperience() == exp)
                 System.out.println(worker.toString());
         }
     }

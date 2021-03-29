@@ -1,18 +1,23 @@
 package by.yarchynskaya.team;
 
+import org.apache.log4j.Logger;
+
 public class Worker {
+    private static final Logger LOG = Logger.getLogger(Worker.class);
+
     public String surname;
     public String name;
     public int age;
     public int salary;
-    public int exprerience;
+    public int experience;
 
-    public Worker(String surname, String name, int age, int salary, int exprerience) {
+    public Worker(String surname, String name, int age, int salary, int experience) {
         this.surname = surname;
         this.name = name;
         this.age = age;
         this.salary = salary;
-        this.exprerience = exprerience;
+        this.experience = experience;
+        LOG.info("\t\n* Added worker");
     }
 
     public Worker() {
@@ -47,16 +52,16 @@ public class Worker {
         this.salary = salary;
     }
 
-    public int getExprerience() {
-        return exprerience;
+    public int getExperience() {
+        return experience;
     }
-    public void setExprerience(int exprerience) {
-        this.exprerience = exprerience;
+    public void setExperience(int experience) {
+        this.experience = experience;
     }
 
     @Override
     public String toString() {
         return "\n\t* СОТРУДНИК " + surname + ' ' + name +
-                ":\n\t\tВозраст: " + age + ", З/П: " + salary + ", стаж: " + exprerience;
+                ":\n\t\tВозраст: " + age + ", З/П: " + salary + ", стаж: " + experience;
     }
 }

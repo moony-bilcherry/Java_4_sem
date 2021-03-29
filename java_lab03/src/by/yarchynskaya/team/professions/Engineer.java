@@ -15,6 +15,6 @@ public class Engineer extends Worker {
     @Override
     public String toString() {
         return "\n\t* ИНЖЕНЕР " + surname + ' ' + name +
-                ":\n\t\tВозраст: " + age + ", З/П: " + salary + ", стаж: " + exprerience;
+                ":\n\t\tВозраст: " + age + ", З/П: " + salary + ", стаж: " + experience;
     }
 }

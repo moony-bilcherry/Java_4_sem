@@ -1,0 +1,43 @@
+29.03.2021  12:02:38 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:06:04 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:06:51 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:07:16 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
++ Added worker
+29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
++ Added worker
+29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
++ Added worker
+29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
++ Added worker
+29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.director.Director  - ====== Sorted by salary
+29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
