@@ -20,7 +20,11 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
+import java.beans.XMLDecoder;
+import java.beans.XMLEncoder;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 /* 3 лаба:
 Определить иерархию сотрудников: инженер, сис админ,
@@ -117,5 +121,24 @@ public class Main {
         SurveyCorps.addWorker(workerXML);
 
         System.out.println("\n\t* Сериализация в XML");
+        FileOutputStream out = new FileOutputStream("files/Serialize.xml");
+        XMLEncoder xmlEncoder = new XMLEncoder(out);
+        xmlEncoder.writeObject(workerXML);
+        xmlEncoder.close();
+
+        System.out.println("\n\t* Десериализация из XML");
+        FileInputStream in = new FileInputStream("files/Serialize.xml");
+        XMLDecoder xmlDecoder = new XMLDecoder(in);
+        Worker workerXML2 = (Worker) xmlDecoder.readObject();
+        xmlDecoder.close();
+        System.out.println(workerXML2);
+
+        System.out.println("\n\t* Сериализация в JSON");
+        Gson gson = new GsonBuilder().create();
+        String json = gson.toJson(workerXML);
+        System.out.println(json);
+        FileOutputStream jsonOut = new FileOutputStream("files/Serialize.json");
+        byte[] outText = json.getBytes(StandardCharsets.UTF_8);
+        jsonOut.write(outText, 0, outText.length);
     }
 }

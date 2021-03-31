@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.10" class="java.beans.XMLDecoder">
+ <object class="by.yarchynskaya.team.Worker" id="Worker0">
+  <void class="by.yarchynskaya.team.Worker" method="getField">
+   <string>surname</string>
+   <void method="set">
+    <object idref="Worker0"/>
+    <string>Зое</string>
+   </void>
+  </void>
+  <void class="by.yarchynskaya.team.Worker" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Worker0"/>
+    <string>Ханджи</string>
+   </void>
+  </void>
+  <void class="by.yarchynskaya.team.Worker" method="getField">
+   <string>age</string>
+   <void method="set">
+    <object idref="Worker0"/>
+    <int>31</int>
+   </void>
+  </void>
+  <void class="by.yarchynskaya.team.Worker" method="getField">
+   <string>salary</string>
+   <void method="set">
+    <object idref="Worker0"/>
+    <int>2560</int>
+   </void>
+  </void>
+  <void class="by.yarchynskaya.team.Worker" method="getField">
+   <string>experience</string>
+   <void method="set">
+    <object idref="Worker0"/>
+    <int>12</int>
+   </void>
+  </void>
+ </object>
+</java>
