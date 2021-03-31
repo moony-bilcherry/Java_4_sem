@@ -8,6 +8,8 @@ import by.yarchynskaya.team.professions.Engineer;
 import by.yarchynskaya.team.professions.Programmer;
 import by.yarchynskaya.team.professions.ProgrammerType;
 import by.yarchynskaya.team.professions.SystemAdmin;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -25,6 +27,8 @@ import java.beans.XMLEncoder;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 
 /* 3 лаба:
 Определить иерархию сотрудников: инженер, сис админ,
@@ -140,5 +144,16 @@ public class Main {
         FileOutputStream jsonOut = new FileOutputStream("files/Serialize.json");
         byte[] outText = json.getBytes(StandardCharsets.UTF_8);
         jsonOut.write(outText, 0, outText.length);
+
+        System.out.println("\n\t* Десериализация из JSON");
+        Scanner scanner = new Scanner(new File("files/Serialize.json"));
+        String result = "";
+        while(scanner.hasNext())
+            result += scanner.nextLine();
+        scanner.close();
+        Worker workerXML3 = gson.fromJson(result, Worker.class);
+        System.out.println(workerXML3);
+
+
     }
 }
