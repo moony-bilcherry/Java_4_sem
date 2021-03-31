@@ -606,3 +606,18 @@
 * Added worker
 31.03.2021  15:39:33 [main] INFO  by.yarchynskaya.director.Director  - 
 ====== Sorted by salary
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  15:41:02 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
