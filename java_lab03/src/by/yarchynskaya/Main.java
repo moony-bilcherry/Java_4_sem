@@ -29,6 +29,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /* 3 лаба:
 Определить иерархию сотрудников: инженер, сис админ,
@@ -109,12 +111,12 @@ public class Main {
 
         System.out.println("\n======== 4 ЛАБА");
 
-        System.out.println("\n\t* Валидация XML по схеме:");
+        System.out.println("\n\t\t* Валидация XML по схеме:");
         String pathXml = new String("files/example.xml");
         String pathXsd = new String("files/example.xsd");
-        System.out.println("XML соответствует XSD : " + (Main.checkXMLforXSD(pathXml, pathXsd)));
+        System.out.println("XML соответствует XSD: " + (Main.checkXMLforXSD(pathXml, pathXsd)));
 
-        System.out.println("\n\t* Парс объектов из XML:");
+        System.out.println("\n\t\t* Парс объектов из XML:");
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         SaxParser saxp = new SaxParser();
@@ -124,20 +126,20 @@ public class Main {
         System.out.println(workerXML.toString());
         SurveyCorps.addWorker(workerXML);
 
-        System.out.println("\n\t* Сериализация в XML");
+        System.out.println("\n\t\t* Сериализация в XML");
         FileOutputStream out = new FileOutputStream("files/Serialize.xml");
         XMLEncoder xmlEncoder = new XMLEncoder(out);
         xmlEncoder.writeObject(workerXML);
         xmlEncoder.close();
 
-        System.out.println("\n\t* Десериализация из XML");
+        System.out.println("\n\t\t* Десериализация из XML");
         FileInputStream in = new FileInputStream("files/Serialize.xml");
         XMLDecoder xmlDecoder = new XMLDecoder(in);
         Worker workerXML2 = (Worker) xmlDecoder.readObject();
         xmlDecoder.close();
         System.out.println(workerXML2);
 
-        System.out.println("\n\t* Сериализация в JSON");
+        System.out.println("\n\t\t* Сериализация в JSON");
         Gson gson = new GsonBuilder().create();
         String json = gson.toJson(workerXML);
         System.out.println(json);
@@ -145,7 +147,7 @@ public class Main {
         byte[] outText = json.getBytes(StandardCharsets.UTF_8);
         jsonOut.write(outText, 0, outText.length);
 
-        System.out.println("\n\t* Десериализация из JSON");
+        System.out.println("\n\t\t* Десериализация из JSON");
         Scanner scanner = new Scanner(new File("files/Serialize.json"));
         String result = "";
         while(scanner.hasNext())
@@ -154,6 +156,14 @@ public class Main {
         Worker workerXML3 = gson.fromJson(result, Worker.class);
         System.out.println(workerXML3);
 
-
+        System.out.println("\n\t\t* Stream API");
+        System.out.println("\t* Сотрудники с з/п > 1200:");
+        Stream<Worker> resultStream1 = SurveyCorps.getStaff().stream().filter(w -> w.getSalary() > 1200);
+        for(var elem: resultStream1.collect(Collectors.toList()))
+        {
+            System.out.println(elem.name + " " + elem.salary);
+        }
+        Stream<Worker> resultStream2 = SurveyCorps.getStaff().stream();
+        System.out.println("\t* Всего сотрудников в компании: " + resultStream2.count());
     }
 }
