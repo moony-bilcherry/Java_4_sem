@@ -10,8 +10,17 @@ import by.yarchynskaya.team.professions.SystemAdmin;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.xml.sax.SAXException;
 
-/*Определить иерархию сотрудников: инженер, сис админ,
+import javax.xml.XMLConstants;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+import java.io.File;
+
+/* 3 лаба:
+Определить иерархию сотрудников: инженер, сис админ,
 программисты (junior, senior и т.п.). Набрать компанию по заданному плану
 набора. Создать директора. Его функции: подсчитать сотрудников,
 отсортировтаь по зарплате, найти сотрудников с заданным уровнем навыков*/
@@ -22,7 +31,43 @@ public class Main {
     }
     private static final Logger LOG = Logger.getLogger(Main.class);
 
-    public static void main(String[] args) {
+    /**
+     * @param pathXml - путь к XML
+     * @param pathXsd - путь к XSD
+     */
+    public static boolean checkXMLforXSD(String pathXml, String pathXsd)
+            throws Exception {
+
+        try {
+            File xml = new File(pathXml);
+            File xsd = new File(pathXsd);
+
+            if (!xml.exists()) {
+                System.out.println("Не найден XML " + pathXml);
+            }
+
+            if (!xsd.exists()) {
+                System.out.println("Не найден XSD " + pathXsd);
+            }
+
+            if (!xml.exists() || !xsd.exists()) {
+                return false;
+            }
+
+            SchemaFactory factory = SchemaFactory
+                    .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            Schema schema = factory.newSchema(new StreamSource(pathXsd));
+            Validator validator = schema.newValidator();
+            validator.validate(new StreamSource(pathXml));
+            return true;
+        } catch (SAXException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+
+    }
+
+    public static void main(String[] args) throws Exception {
         LOG.info("Starting program_____________________________");
 
         Company SurveyCorps = new Company("SurveyCorps");
@@ -46,5 +91,14 @@ public class Main {
         dir.sortBySalary(SurveyCorps);
         System.out.println(SurveyCorps.toString());
         dir.searchByExp(SurveyCorps, 2);
+
+        System.out.println("\n======== 4 ЛАБА");
+
+        System.out.println("\n\t* Валидация XML по схеме:");
+        String pathXml = new String("files/example.xml");
+        String pathXsd = new String("files/example.xsd");
+        System.out.println("XML соответствует XSD : " + (Main.checkXMLforXSD(pathXml, pathXsd)));
+
+
     }
 }

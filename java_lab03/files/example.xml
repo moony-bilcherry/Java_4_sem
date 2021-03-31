@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<Company>
+        <Worker>
+            <name>саша</name>
+            <surname>иванов</surname>
+            <age>24</age>
+            <salary>1800</salary>
+            <experience>4</experience>
+        </Worker>
+
+        <Worker>
+            <name>дима</name>
+            <surname>гончаров</surname>
+            <age>50</age>
+            <salary>2560</salary>
+            <experience>8</experience>
+        </Worker>
+</Company>

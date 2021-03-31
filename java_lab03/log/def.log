@@ -1,43 +1,121 @@
-29.03.2021  12:02:38 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:06:04 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:06:51 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:07:16 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
-+ Added worker
-29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
-+ Added worker
-29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
-+ Added worker
-29.03.2021  12:10:47 [main] INFO  by.yarchynskaya.team.Worker  - 
-+ Added worker
-29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:56:35 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  12:56:35 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:56:35 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:56:35 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:11:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:56:35 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:56:35 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  12:58:08 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  12:58:08 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:08 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:08 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:08 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:05 [main] INFO  by.yarchynskaya.director.Director  - ====== Sorted by salary
-29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
-29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:08 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  12:58:19 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  12:58:19 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:19 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:19 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.team.Worker  - 	
+31.03.2021  12:58:19 [main] INFO  by.yarchynskaya.team.Worker  - 	
 * Added worker
-29.03.2021  12:13:41 [main] INFO  by.yarchynskaya.director.Director  - 
+31.03.2021  12:58:19 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  12:58:37 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  12:58:37 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:37 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:37 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:37 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:37 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  12:58:54 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  12:58:54 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:54 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:54 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:54 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:58:54 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  12:59:33 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  12:59:33 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:59:33 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:59:33 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:59:33 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  12:59:33 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  13:02:27 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  13:02:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:02:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:02:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:02:27 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:02:28 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  13:03:07 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  13:03:07 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:07 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:07 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:07 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:07 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  13:03:21 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  13:03:21 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:21 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:21 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:21 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:03:21 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  13:04:26 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  13:04:26 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:26 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:26 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:26 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:26 [main] INFO  by.yarchynskaya.director.Director  - 
+====== Sorted by salary
+31.03.2021  13:04:48 [main] INFO  by.yarchynskaya.Main  - Starting program_____________________________
+31.03.2021  13:04:48 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:48 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:48 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:48 [main] INFO  by.yarchynskaya.team.Worker  - 	
+* Added worker
+31.03.2021  13:04:48 [main] INFO  by.yarchynskaya.director.Director  - 
 ====== Sorted by salary

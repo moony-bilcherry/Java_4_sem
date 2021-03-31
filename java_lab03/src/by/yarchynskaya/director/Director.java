@@ -13,7 +13,7 @@ public class Director implements IDirector {
 
     public Director(String name) {
         this.name = name;
-        System.out.println("\t* Добавлен ДИРЕКТОР: " + this.name);
+        System.out.println("\t* Добавлен ДИРЕКТОР: " + this.name + "\n");
     }
 
     public Director() {
@@ -39,6 +39,7 @@ public class Director implements IDirector {
                 }
             });
         }
+        System.out.println("\n\t====== СОТРУДНИКИ ОТСОРТИРОВАНЫ ПО З/П");
         LOG.info("\n====== Sorted by salary");
     }
 
