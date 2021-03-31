@@ -1,6 +1,7 @@
 package by.yarchynskaya;
 
 import by.yarchynskaya.director.Director;
+import by.yarchynskaya.lab04.SaxParser;
 import by.yarchynskaya.team.*;
 import by.yarchynskaya.company.*;
 import by.yarchynskaya.team.professions.Engineer;
@@ -13,6 +14,8 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -76,15 +79,19 @@ public class Main {
         Director dir = new Director("Эрвин");
 
         Worker worker1 = new Worker("Ботт", "Марко", 27,450,2);
+        Programmer progger1 = new Programmer("Арлерт", "Армин", 19, 1190, 2);
         Engineer engineer1 = new Engineer("Йегер", "Эрен", 19, 780, 1);
         SystemAdmin admin1 = new SystemAdmin("Браун", "Райнер", 21, 1450,4);
-        Programmer progger1 = new Programmer("Арлерт", "Армин", 19, 1190, 2);
+        Programmer progger2 = new Programmer("Кирштейн", "Жан", 20, 2320, 4, ProgrammerType.Middle);
+        Programmer progger3 = new Programmer("Аккерман", "Леви", 35, 5500, 9, ProgrammerType.Senior);
         progger1.setLevel(ProgrammerType.Junior);
 
         SurveyCorps.addWorker(worker1);
         SurveyCorps.addWorker(engineer1);
         SurveyCorps.addWorker(admin1);
         SurveyCorps.addWorker(progger1);
+        SurveyCorps.addWorker(progger2);
+        SurveyCorps.addWorker(progger3);
         System.out.println(SurveyCorps.toString());
 
         System.out.println("Количество сотрудников комании " + SurveyCorps.company_name + ": " + dir.countWorkers(SurveyCorps));
@@ -99,6 +106,16 @@ public class Main {
         String pathXsd = new String("files/example.xsd");
         System.out.println("XML соответствует XSD : " + (Main.checkXMLforXSD(pathXml, pathXsd)));
 
+        System.out.println("\n\t* Парс объектов из XML:");
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        SAXParser parser = factory.newSAXParser();
+        SaxParser saxp = new SaxParser();
+        parser.parse(new File(pathXml), saxp);
 
+        Worker workerXML = saxp.getResult();
+        System.out.println(workerXML.toString());
+        SurveyCorps.addWorker(workerXML);
+
+        System.out.println("\n\t* Сериализация в XML");
     }
 }
